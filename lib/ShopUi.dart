@@ -12,6 +12,7 @@ class _ShopUiState extends State<ShopUi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.orange[800],
       body: Column(
         children: [
           Container(
@@ -64,12 +65,14 @@ class _ShopUiState extends State<ShopUi> {
             ),
           ),
           Expanded(
-              flex: 12,
+              // flex: 12,
               child: Container(
+                // margin: EdgeInsets.only(bottom: 50),
                 color: Colors.orange[800],
                 child: Padding(
-                  padding: EdgeInsets.only(right: 15, left: 15),
+                  padding: EdgeInsets.only(right: 15, left: 15,bottom: 50),
                   child: ListView(
+                    padding: EdgeInsets.only(bottom: 50),
                     children: [
                       Container(
                         width: double.infinity,
@@ -158,10 +161,10 @@ class _ShopUiState extends State<ShopUi> {
                   ),
                 ),
               )),
-          Expanded(
-              child: Container(
-            color: Colors.orange[800],
-          ))
+          // Expanded(
+          //     child: Container(
+          //   color: Colors.orange[800],
+          // ))
         ],
       ),
     );
